@@ -1,6 +1,5 @@
 # Debugviewer
-<B>Debugviewer</B><BR>
-![Debugviewer](./Readme/debugviewer.png)![scene-tree](./Readme/scene-tree.png)
+![Preview](./readme/preview.png)
 	
 An addon to be placed in the scene-tree. View your variables in realtime.<BR>
   1. Download the "\2020 - AddonsProjects\addons\debug_viewer\" folder to your projects addons-folder..<BR>

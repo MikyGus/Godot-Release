@@ -53,9 +53,9 @@ func _process(_delta: float) -> void:
 	if Show_Game_Paused:
 		add_OS_value("Game Paused", str(get_tree().paused))
 	if Show_Global_Mouse_Position:
-		add_OS_value("Mouse Position", str(get_global_mouse_position()))
+		add_OS_value("Mouse Position(Global)", str(get_global_mouse_position()))
 	if Show_Local_Mouse_Position:
-		add_OS_value("Mouse Position", str(get_local_mouse_position()))
+		add_OS_value("Mouse Position(Local)", str(get_local_mouse_position()))
 	_commit_values()
 	
 	

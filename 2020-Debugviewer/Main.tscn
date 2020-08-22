@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://addons/debug_viewer/debug_viewer.gd" type="Script" id=1]
+[ext_resource path="res://MovingSprite.gd" type="Script" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://DebugView_MovingSprite.gd" type="Script" id=4]
+
+[node name="Main" type="Node2D"]
+
+[node name="DebugView" type="Panel" parent="."]
+margin_right = 197.0
+margin_bottom = 198.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+Show_Locale = true
+Show_Keyboard = true
+Show_ModelName = true
+Show_Game_Paused = true
+Show_Global_Mouse_Position = true
+Show_Local_Mouse_Position = true
+
+[node name="MovingSprite" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+script = ExtResource( 2 )
+
+[node name="DebugView" type="Panel" parent="MovingSprite"]
+margin_left = 35.0
+margin_top = -28.0
+margin_right = 295.0
+margin_bottom = 68.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+Show_FPS = false
+Show_StaticMemory = false
+Show_WindowPosition = false
+Show_WindowSize = false

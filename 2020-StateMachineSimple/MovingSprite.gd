@@ -31,11 +31,8 @@ func _resting() -> void:
 
 
 func _walking(_delta : float) -> void:
-#	if _time_walking < _duration_walking:
 	if position.distance_to(_target_position) > 0.5:
-#		_time_walking += delta
 		position = position.linear_interpolate(_target_position,0.05)
-#		position.x = lerp(_from_position.x,_target_position.x,_time_walking/_duration_walking)
 	elif position != _target_position:
 		position = _target_position
 	else:
